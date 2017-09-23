@@ -8,6 +8,6 @@ public class UseHR {
         hr.hire(new Salaried());
         hr.hire(new Hourly());
         hr.printEverybody();
-//        hr.payEverybody();
+        hr.payEverybody();
     }
 }

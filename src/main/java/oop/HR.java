@@ -24,9 +24,10 @@ public class HR {
     }
 
     public void payEverybody() {
-        for (Employee e : employees) {
-            System.out.printf("Paying %s %s%n", e.getName(),
-                    NumberFormat.getCurrencyInstance().format(e.getPay()));
-        }
+    	employees.forEach(
+    			e -> System.out.printf(
+    					"Paying %s %s%n", e.getName(),
+    					NumberFormat.getCurrencyInstance()
+    						.format(e.getPay())));
     }
 }
